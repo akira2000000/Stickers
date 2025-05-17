@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arte Olor Chetos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/favicon.ico?v=1747496854766">
+    <style>
+      body { margin: 0; overflow: hidden; }
+      #ar-scene { width: 100vw; height: 100vh; }
+    </style>
+  </head>
+  <body>
+    <div id="ar-scene">
+      <a-scene
+        mindar-image="imageTargetSrc: https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/targets%20(11).mind?v=1747278592383; autoStart: true; maxTrack: 2;"
+        embedded
+        color-space="sRGB"
+        renderer="colorManagement: true, physicallyCorrectLights"
+        vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: true"
+      >
+        <a-assets>
+          <img id="s1-layer1" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/tortillas2-Photoroom.png?v=1747273446201" />
+          <img id="s1-layer2" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/tortillas3-Photoroom.png?v=1747273438571" />
+          <img id="s1-layer3" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/tortillas1-Photoroom.png?v=1747273449414" />
+          
+          <img id="s2-layer1" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/takis2-Photoroom.png?v=1747273464412" />
+          <img id="s2-layer2" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/takis3.png?v=1747292013591" />
+          <img id="s2-layer3" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/takis1-Photoroom.png?v=1747273468062" />
+          
+          <img id="s3-layer1" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/payasito1.png?v=1747292816529"/>
+          <img id="s3-layer2" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/payasito2-Photoroom.png?v=1747273472579"  />
+          <img id="s3-layer3" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/payasito3-Photoroom.png?v=1747273470266" />
+          
+          <img id="s4-layer1" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/gatogrosero2-Photoroom.png?v=1747273484994" />
+          <img id="s4-layer2" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/gatogrosero3-Photoroom.png?v=1747273479802" />
+          <img id="s4-layer3" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/gatogrosero1-Photoroom.png?v=1747273491410" />
+          
+          <img id="s5-layer1" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/elote2-Photoroom.png?v=1747273495413" />
+          <img id="s5-layer2" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/elote3-Photoroom.png?v=1747273493049" />
+          <img id="s5-layer3" src="https://cdn.glitch.global/9be1c4c8-ae57-44c4-b182-0637bd5845bd/elote1-Photoroom.png?v=1747273501007" />
+        </a-assets>
+
+        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+        <a-entity mindar-image-target="targetIndex: 0">
+          <a-image src="#s1-layer1" position="0.2 -0.2 0" width="2" height="2"></a-image>
+          <a-image src="#s1-layer2" position="0.2 -0.2 0.05" width="2" height="2"></a-image>
+          <a-image src="#s1-layer3" position="0.2 -0.2 0.1" width="2" height="2"></a-image>
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 1">
+          <a-image src="#s2-layer1" position="0.2 -0.2 0" width="2" height="2"></a-image>
+          <a-image src="#s2-layer2" position="0.2 -0.2 0.05" width="2" height="2"></a-image>
+          <a-image src="#s2-layer3" position="0.2 -0.2 0.1" width="2" height="2"></a-image>
+        </a-entity>
+        
+        <a-entity mindar-image-target="targetIndex: 2">
+          <a-image src="#s3-layer1" position="0.2 -0.2 0" width="2" height="2"></a-image>
+          <a-image src="#s3-layer2" position="0.2 -0.2 0.05" width="2" height="2"></a-image>
+          <a-image src="#s3-layer3" position="0.2 -0.2 0.1" width="2" height="2"></a-image>
+        </a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 3">
+          <a-image src="#s4-layer1" position="0.2 -0.2 0" width="2" height="2"></a-image>
+          <a-image src="#s4-layer2" position="0.2 -0.2 0.05" width="2" height="2"></a-image>
+          <a-image src="#s4-layer3" position="0.2 -0.2 0.1" width="2" height="2"></a-image>
+        </a-entity>
+        
+        <a-entity mindar-image-target="targetIndex: 4">
+          <a-image src="#s5-layer1" position="0.2 -0.2 0" width="2" height="2"></a-image>
+          <a-image src="#s5-layer2" position="0.2 -0.2 0.05" width="2" height="2"></a-image>
+          <a-image src="#s5-layer3" position="0.2 -0.2 0.1" width="2" height="2"></a-image>
+        </a-entity>
+        
+      </a-scene>
+    </div>
+  </body>
+</html>
